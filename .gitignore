@@ -1,0 +1,25 @@
+# IDE and System files
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+.DS_Store
+
+# Docker and Secrets
+.env
+
+# Core and Database (Exclude all, keep custom.ini)
+/.srv/*
+!/.srv/custom.ini
+
+# WordPress Clean-up (Ignore all plugins and standard themes)
+/plugins/*
+/themes/*
+
+# Allow only your custom theme
+!/themes/NovaTheme/
+
+# Build files inside your theme (optional)
+**/node_modules/
+**/dist/
